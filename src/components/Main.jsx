@@ -13,11 +13,13 @@ import { SwiperSlide } from "swiper/react"
 import { useState } from "react"
 
 const Main = () => {
-    const [data] = useState([{_id: '63acbf4f00017c40aff5ec90', image: q, name: "Газовые горелки"},
+    const [data] = useState([
+    {_id: '63acbf4f00017c40aff5ec90', image: q, name: "Газовые горелки"},
     {_id: '63b005958eb19df7bec493fa', image: e, name: "Счетчики"},
 //     {_id: '63b7278f9a12ac9101ce10f6', image: r, name: "Эмали"},
 //     {_id: '63b88c5a6d3ef0902cdc71e5', image: w, name: "Краски"},
-//     {_id: '63b8909b6d3ef0902cdc7219', image: t, name: "Сухие строительные смеси"}])
+//     {_id: '63b8909b6d3ef0902cdc7219', image: t, name: "Сухие строительные смеси"}
+    ])
 
     const items = data.map((item, i) => 
         <SwiperSlide key={i} className="swiper-div flex justify-center items-start gap-3">
